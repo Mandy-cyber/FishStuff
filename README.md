@@ -10,11 +10,13 @@
     - [Basic Overview](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#%EF%B8%8F-basic-overview)
     - [Statistics & Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-statistics--observations)
 4. [Visualization](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-visualization)
-5. [Key Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations)
+    - [Box Plots](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#numerical-columns-1)
+    - [Pie & Bar Charts](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#categorical-columns-1)
+6. [Key Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations)
 <br>
 
 # **INTRO**
-
+The mission, that I have in fact accepted, is to describe a dataset containing data about 🐠. The description should include statistics, visualization, as well as something *interesting* and something *useful*. Having never 'described' a dataset before, it should be pretty entertaining to see what I find and uh.. how I find it. Alrighty, here we go.
 <br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br>
 
@@ -70,7 +72,7 @@ For each numerical column, the following statistical data was found using `df_fi
 
 <img src="https://user-images.githubusercontent.com/67931161/141653628-b0c1171d-2173-46d3-8ea6-91f9cc700be8.jpg" alt="table showing the statistical data of each numerical column"/>
 
-The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [useful](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the standard deviation for e.g the 'Catch Percentage', parish by parish. This could be used by farmers to determine in which parish(es) they would be most likely to catch fish.
+The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [useful](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the mean for e.g the 'Catch Percentage', parish by parish. This could be used by farmers to determine in which parish(es) they would be most likely to catch fish.
 
 What the data also shows is an invalid weight. The 'min' value for the 'Avg Weight/g' was zero grams, which is, of course, not a valid weight (*weight > zero*). In addition, the large standard deviation values hints at the possibility of outliers, which will be confirmed through [box-plot visualizations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-visualization). In a scenario where the mean value is more significant, the trimmed mean (TrMean) could be calculated to reduce the impact of these outliers.
 
@@ -190,9 +192,64 @@ COLUMN NAME | GRAPH | COLUMN NAME | GRAPH|
 <br><br><br>
 
 ## 👩‍🌾 *Key Observations*
-When analyzing the data there were two key observations,
-SOMETHING INTERESTING | SOMETHING USEFUL |
-:------------: | :---------------------: |
-this is something interesting | this is something useful
+### 1. Something Useful
+As mentioned earlier, it would be useful
+> to break the dataset down further and look at the mean for e.g the 'Catch Percentage', parish by parish.
+
+This would primarily be useful for farmers as it would help them to determine which parish(es) they would be most likely to catch fish. The below code was used,
+```python
+#the listOfParishes is not shown in order to save space
+df_fish = df_fish[['Parish', 'Catch Percentage']]
+avgCatchList = {}
+
+for parish in listOfParishes:
+    df_fish = df_fish.loc[df_fish['Parish'] == parish] #make a df with just the necessary parish values
+    sumCatch = df_fish['Catch Percentage'].sum() #sum of cell values
+    avgCatch = sumCatch / len(df_fish) #average catch percentage
+    avgCatchList[parish] = avgCatch #add to dict
+    df_fish = pd.read_csv('fish.csv') #reload the dataset afresh
+
+sortedCatchInfo = {} #new dict to use
+sortedKeys = sorted(avgCatchList, key=avgCatchList.get, reverse=True) #sort the key values of the old dict
+for w in sortedKeys:
+    sortedCatchInfo[w] = avgCatchList[w] #put those values into the new dict
+
+print(sortedCatchInfo)    
+```
+<br>
+
+*I would show the dictionary output in the terminal but it's rather ugly, so I've formatted it properly to 3 s.f here,*
+<br><br>
+<img src="https://user-images.githubusercontent.com/67931161/141660418-1bbededc-0bc4-4a23-8c5b-e3b7e5e7dd60.jpg" alt="Welcome to Clarendon, home to a 0.137 Catch Percentage!" align="right" height="400" width="500px"/>
+
+
+| Parish | Catch Percentage
+| :-----: |:-----: |
+**Clarendon** | 0.137
+**Saint Andrew** | 0.131
+**Saint Ann** | 0.126
+**Saint James** | 0.118
+**Manchester** | 0.114
+**Saint Thomas** | 0.113
+**Portland** | 0.113
+**Saint Mary** | 0.111
+**Hanover** | 0.105
+**Westmoreland** | 0.101
+**Trelawny** | 0.100
+**Saint Catherine** | 0.096
+**Kingston Parish** | 0.092
+**Saint Elizabeth** | 0.088
 
 [**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+
+<br><br>
+
+### 2. Something Interesting
+Something interesting, at least to me, was
+> just over 50% of the recorded species were found in Saltwater environments, and roughly 55% of the recorded species were found in River bodies of water.
+
+Now, according to my ninth grade geography, 
+* Saltwater = oceans, seas, and lagoons
+* Freshwater = rivers, lakes, and other smaller bodies of water
+* Estuartine =  that awkward space between a saltwater body of water, and a freshwater BoW
+* Aquaculture = manmade bodies of water
