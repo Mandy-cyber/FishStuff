@@ -6,6 +6,9 @@
 
 # **TABLE OF CONTENTS**
 1. [The Problem](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#the-problem)
+2. [The Data](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#the-data)
+3. [Visualization](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#visualization)
+4. [Key Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#key-observations)
 
 # **THE PROBLEM**
 The problem shall go here</p>
