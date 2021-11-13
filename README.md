@@ -14,6 +14,7 @@
 
 # **THE PROBLEM**
 The problem shall go here</p>
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br>
 
 # **THE DATA**
@@ -28,7 +29,8 @@ import numpy as np
 df_fish = pd.read_csv('fish.csv') 
 print(df_fish.shape)
 ```
-With only 159 rows of data this is a considerably small dataset and hence any predictions derived from it would have low accuracy levels. This point will be furthered in the "Statistics & Observations" section.
+With only 159 rows of data this is a considerably small dataset and hence any predictions derived from it would have low accuracy levels. This point will be furthered in the [Statistics & Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-statistics--observations) section.
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br>
 
 ### *Table Showing the Data Types of Each Column*
@@ -48,6 +50,8 @@ COLUMN NAME | NUMERICAL/CATEGORICAL DATA | DATA TYPE
 **Estimated Fish Pop. By Tonnes** | Numerical | float
 **Fish Caught Pop. By Tonnes** | Numerical | int
 **Catch Percentage** | Numerical | float
+
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br>
 
 ## 🔢 Statistics & Observations
@@ -64,6 +68,8 @@ For each numerical column, the following statistical data was found using `df_fi
   <li><b>MAX</b> - largest value</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/67931161/141595982-9d52fecb-3a53-48a3-bbff-ec2e1734ce38.jpg" alt="table showing the statistical data of each numerical column"/>
+
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br>
 
 ---
@@ -78,10 +84,13 @@ For each categorical column, the following statistical data was found using `df_
   <li><b>FREQ</b> - the frequency of the mode</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/67931161/141597598-9739d299-bd33-40ce-beac-c43dfa5bf3c7.jpg" alt="table showing the statistical data of each categorical column"/>
+
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br>
 
 ## 🌈 Visualization
 *For the visual learners, woo*
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br>
 
 ## 👩‍🌾 *Key Observations*
@@ -89,3 +98,5 @@ When analyzing the data there were two key observations,
 SOMETHING INTERESTING | SOMETHING USEFUL |
 :------------: | :---------------------: |
 this is something interesting | this is something useful
+
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
