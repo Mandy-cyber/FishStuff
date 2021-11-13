@@ -4,6 +4,9 @@
 <img src="https://user-images.githubusercontent.com/67931161/141594058-f8656f0b-58c8-44dc-befb-9b29d807377d.gif" align="center">
 <br><br>
 
+# **TABLE OF CONTENTS**
+1. [The Problem](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#the-problem)
+
 # **THE PROBLEM**
 The problem shall go here</p>
 <br><br>
