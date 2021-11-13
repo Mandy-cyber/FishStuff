@@ -142,22 +142,52 @@ COLUMN NAME | GRAPH | COLUMN NAME | GRAPH|
 <br><br><br>
 
 ### *Categorical Columns*
-<p align="center"><img src="" align="center" height="500" width="750"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67931161/141657925-e1a3a7ba-2339-49ab-8a5a-8b0fae9954db.jpg" align="center" height="500" width="750"/></p>
 <br>
 
-The pie charts act as a visual representation of the prior mentioned statistical data, and were created using `matplotlib` :
+The pie and bar charts act as visual representations of the prior mentioned statistical data, and were created using `matplotlib` :
 ```python
+#again some lists are not shown in the code to save on space
+#BAR CHARTS
+def createBarChart(barTitle, barColTitle):
+    c.reverse()
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.grid(color='grey', linestyle='-', linewidth=0.20)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.yaxis.set_ticks_position('none')
 
+    ax.set(title=f"{barTitle}")
+    data = df_fish[barColTitle].value_counts()
+    data.plot(kind="barh", color=c)
+    plt.locator_params(axis="x", integer=True)
+    plt.xlim(min(data),max(data))
+    plt.xticks(rotation=80)
+    plt.show()
+
+for x in range(len(listOfCatColumns1)):
+    createBarChart(listOfBarTitles[x], listOfCatColumns1[x])
+
+#PIE CHARTS
+def createPieChart(pieTitle, pieColTitle): 
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.set(title=f"{pieTitle}")
+    data = df_fish[pieColTitle].value_counts()
+    data.plot(kind="pie", autopct='%1.1f%%', colors=c, labels=["", "", "", ""])
+    plt.legend(labels=data.index)
+    plt.show()
+
+for x in range(len(listOfCatColumns2)):
+    createPieChart(listOfPieTitles[x], listOfCatColumns2[x])
 ```
 <br>
 
 COLUMN NAME | GRAPH | COLUMN NAME | GRAPH| 
 :------------: | :---------------------: | :---------------------: | :---------------------: | 
-**Species** | <img src="" height="300" width="275"/> | **Parish** | <img src="" height="300" width="275"/> 
-**Envrionment Type** | <img src="" height="300" width="275"/> | **Body of Water** | <img src="" height="300" width="275"/> 
+**Species** | <img src="https://user-images.githubusercontent.com/67931161/141657560-baf7f994-6a45-4219-8a1e-d0af11298e71.png" height="275" width="400"/> | **Parish** | <img src="https://user-images.githubusercontent.com/67931161/141657570-7e5f2c67-eb47-48c7-9e88-0bf543de6d62.png" height="275" width="400"/> 
+**Envrionment Type** | <img src="https://user-images.githubusercontent.com/67931161/141657578-b5059ad3-bc64-47d3-8246-2bc11b5b30a9.png" height="275" width="400"/> | **Body of Water** | <img src="https://user-images.githubusercontent.com/67931161/141657584-36f6722e-7488-4561-9ff6-40895be713c5.png" height="275" width="400"/> 
 
 <br><br><br>
-
 
 ## 👩‍🌾 *Key Observations*
 When analyzing the data there were two key observations,
