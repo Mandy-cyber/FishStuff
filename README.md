@@ -25,7 +25,6 @@ The dataset takes the shape **(159, 11)** , meaning there are 159 rows (excludin
 ```python
 import pandas as pd
 import matplotlib as plt
-import numpy as np
 
 df_fish = pd.read_csv('fish.csv') 
 print(df_fish.shape)
@@ -71,11 +70,11 @@ For each numerical column, the following statistical data was found using `df_fi
 
 <img src="https://user-images.githubusercontent.com/67931161/141653628-b0c1171d-2173-46d3-8ea6-91f9cc700be8.jpg" alt="table showing the statistical data of each numerical column"/>
 
-The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [interesting](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the standard deviation for e.g the 'Catch Percentage', parish by parish. This could be used by farmers to determine in which parish(es) they would be most likely to catch fish.
+The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [useful](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the standard deviation for e.g the 'Catch Percentage', parish by parish. This could be used by farmers to determine in which parish(es) they would be most likely to catch fish.
 
-What the data also shows is an outlier. The 'min' value for the 'Avg Weight/g' was zero grams, which is, of course, not a valid weight (*weight > zero*). In a scenario where the mean value is more significant, the trimmed mean (TrMean) could be calculated to reduce the impact of outliers.
+What the data also shows is an invalid weight. The 'min' value for the 'Avg Weight/g' was zero grams, which is, of course, not a valid weight (*weight > zero*). In addition, the large standard deviation values hints at the possibility of outliers, which will be confirmed through [box-plot visualizations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-visualization). In a scenario where the mean value is more significant, the trimmed mean (TrMean) could be calculated to reduce the impact of these outliers.
 
-*N.B - Initially 'Estimated Fish Pop by Tonnes' was not being described with the other numerical columns, and was instead being considered categorical by pandas. At a second look of the dataset I realized this was due to the presence of commas in some of the cell values. To fix this, the following was done:*
+*N.B - Initially 'Estimated Fish Pop by Tonnes' was not being described with the other numerical columns, and was instead being considered categorical by pandas. At a second look of the dataset, I realized this was due to the presence of commas in some of the cell values. To fix this, the following was done:*
 ```python
 df_fish = df_fish.replace(',','', regex=True)
 df_fish['Estimated Fish Pop by Tonnes'] = df_fish['Estimated Fish Pop by Tonnes'].astype(float)
@@ -96,6 +95,9 @@ For each categorical column, the following statistical data was found using `df_
 </ul>
 <img src="https://user-images.githubusercontent.com/67931161/141653691-80ea9857-0d8c-4fa9-a005-c08e72c2e195.jpg" alt="table showing the statistical data of each categorical column"/>
 
+Once again, the count value remains the same across the columns for the reason mentioned earlier. Looking at the rest of the data, something that stood out was that the Perch species had the same frequency as Hanover in the dataset; however, after additional investigation it was seen that there were no Perch fish recorded in Hanover. The most Perch was found in St. Ann.
+
+The data also shows that just over 50% of the recorded species were found in Saltwater environments, and roughly 55% of the recorded species were found in River bodies of water.
 
 [**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br><br>
@@ -106,7 +108,7 @@ For each categorical column, the following statistical data was found using `df_
 <p align="center"><img src="https://user-images.githubusercontent.com/67931161/141651524-bd32cf06-095b-4744-b9da-5881054d2db7.gif" align="center" height="500" width="750"/></p>
 <br>
 
-The boxplots act as a visual representation of the above statistical data, and were created using `matplotlib` :
+The boxplots act as a visual representation of the prior mentioned statistical data, and were created using `matplotlib` :
 ```python
 #listOfTitles, listOfColumns and listOfColors are not shown (to reduce space)
 plt.rcParams["font.family"] = 'monospace'
@@ -133,10 +135,29 @@ COLUMN NAME | GRAPH | COLUMN NAME | GRAPH|
 **Avg Weight/g** | <img src="https://user-images.githubusercontent.com/67931161/141651644-7f368fa1-fd3f-4d36-96d1-360d7477871f.png" height="300" width="275"/> | **Avg Length2 -diagonal** | <img src="https://user-images.githubusercontent.com/67931161/141651939-a068129b-852c-4020-ac1f-6fd0ddebb408.png" height="300" width="275"/>
 **Avg Length3 -vertical** | <img src="https://user-images.githubusercontent.com/67931161/141651864-37212aaf-eb5b-4174-bf6f-7a91f145099a.png" height="300" width="275"/> | **Avg Length1 -cross** | <img src="https://user-images.githubusercontent.com/67931161/141651940-5b79869e-d144-401e-a290-ef7ec58059c8.png" height="300" width="275"/> 
 | **Fish Caught Pop. By Tonnes** | <img src="https://user-images.githubusercontent.com/67931161/141652003-1baebf8e-a3bb-40b5-9bb4-c5e1201f8409.png" height="300" width="275"/> | **Catch Percentage** | <img src="https://user-images.githubusercontent.com/67931161/141652196-bc50b234-3f0d-48fd-bb93-84b8667f7654.png" height="300" width="275"/>
+**Estimated Fish Pop. By Tonnes** | <img src="https://user-images.githubusercontent.com/67931161/141654008-8f397670-b239-4d50-a113-e2327061ca63.png" height="300" width="275"/>
 
-*N.B - The notches represent the confidence interval (default 95% is used) for the median values - truthfully, I just really liked how the notches looked, oops. Additionally, the circles represent suspected outliers.*
+*N.B - The notches represent the confidence interval (default 95% is used) for the median values - truthfully, I just really liked how the notches looked, oops. Additionally, the circles represent suspected outliers. Five of the seven graphs have outliers, with four of the graphs having => 3 outliers, and the fifth graph having > 3 outliers.*
 <br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br><br>
+
+### *Categorical Columns*
+<p align="center"><img src="" align="center" height="500" width="750"/></p>
+<br>
+
+The pie charts act as a visual representation of the prior mentioned statistical data, and were created using `matplotlib` :
+```python
+
+```
+<br>
+
+COLUMN NAME | GRAPH | COLUMN NAME | GRAPH| 
+:------------: | :---------------------: | :---------------------: | :---------------------: | 
+**Species** | <img src="" height="300" width="275"/> | **Parish** | <img src="" height="300" width="275"/> 
+**Envrionment Type** | <img src="" height="300" width="275"/> | **Body of Water** | <img src="" height="300" width="275"/> 
+
+<br><br><br>
+
 
 ## 👩‍🌾 *Key Observations*
 When analyzing the data there were two key observations,
