@@ -11,6 +11,7 @@
     - [Statistics & Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-statistics--observations)
 4. [Visualization](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-visualization)
 5. [Key Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations)
+<br>
 
 # **THE PROBLEM**
 The problem shall go here</p>
@@ -51,8 +52,8 @@ COLUMN NAME | NUMERICAL/CATEGORICAL DATA | DATA TYPE
 **Fish Caught Pop. By Tonnes** | Numerical | int
 **Catch Percentage** | Numerical | float
 
-<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
-<br>
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+<br><br>
 
 ## 🔢 Statistics & Observations
 ### *Numerical Columns*
@@ -68,6 +69,10 @@ For each numerical column, the following statistical data was found using `df_fi
   <li><b>MAX</b> - largest value</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/67931161/141595982-9d52fecb-3a53-48a3-bbff-ec2e1734ce38.jpg" alt="table showing the statistical data of each numerical column"/>
+
+The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [interesting](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the standard deviation for e.g the 'Catch Percentage', parish by parish. This could be used by Farmers to determine in which parish(es) they would be most likely to catch fish.
+
+What the above information also shows is an outlier. The 'min' value for the 'Avg Weight/g' was zero grams, which is, of course, not a valid weight as *weight > zero*. In a scenario where the mean value is necessary, the trimmed mean (TrMean) could be calculated.
 
 [**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br>
@@ -86,12 +91,12 @@ For each categorical column, the following statistical data was found using `df_
 <img src="https://user-images.githubusercontent.com/67931161/141597598-9739d299-bd33-40ce-beac-c43dfa5bf3c7.jpg" alt="table showing the statistical data of each categorical column"/>
 
 [**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
-<br><br>
+<br><br><br>
 
 ## 🌈 Visualization
 *For the visual learners, woo*
 <br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
-<br><br>
+<br><br><br>
 
 ## 👩‍🌾 *Key Observations*
 When analyzing the data there were two key observations,
@@ -99,4 +104,4 @@ SOMETHING INTERESTING | SOMETHING USEFUL |
 :------------: | :---------------------: |
 this is something interesting | this is something useful
 
-<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
