@@ -191,6 +191,7 @@ COLUMN NAME | GRAPH | COLUMN NAME | GRAPH|
 **Envrionment Type** | <img src="https://user-images.githubusercontent.com/67931161/141657578-b5059ad3-bc64-47d3-8246-2bc11b5b30a9.png" height="275" width="400"/> | **Body of Water** | <img src="https://user-images.githubusercontent.com/67931161/141657584-36f6722e-7488-4561-9ff6-40895be713c5.png" height="275" width="400"/> 
 
 *N.B - You can click on one of the images to open it in a new tab and see it at a larger scale <3.*
+<br>[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
 <br><br><br>
 
 ## 🎣 *Key Observations*
