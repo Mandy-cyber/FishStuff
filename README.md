@@ -13,6 +13,7 @@
     - [Box Plots](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#numerical-columns-1)
     - [Pie & Bar Charts](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#categorical-columns-1)
 6. [Key Observations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations)
+7. [Conclusion](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-conclusion)
 <br>
 
 # **INTRO**
