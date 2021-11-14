@@ -72,7 +72,7 @@ For each numerical column, the following statistical data was found using `df_fi
 
 <img src="https://user-images.githubusercontent.com/67931161/141653628-b0c1171d-2173-46d3-8ea6-91f9cc700be8.jpg" alt="table showing the statistical data of each numerical column"/>
 
-The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [useful](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the mean for e.g the 'Catch Percentage', parish by parish. This could be used by farmers to determine in which parish(es) they would be most likely to catch fish.
+The 'count' value remains constant throughout as there are no NULL values in any of the columns. It is also important to note that the standard deviation value for each column is large in relation to their mean values. This represents the broad spread of data within each column (the data values aren't very close to the mean), and this is further backed by the large interquartile ranges. In this scenario, the large standard deviation is not alarming as the dataset is simply showing recorded general observations across many different features. It would be [useful](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-key-observations), however, to break the dataset down further and look at the mean for e.g the 'Catch Percentage', parish by parish. This could be used by fisherfolk to determine in which parish(es) they would be most likely to catch fish.
 
 What the data also shows is an invalid weight. The 'min' value for the 'Avg Weight/g' was zero grams, which is, of course, not a valid weight (*weight > zero*). In addition, the large standard deviation values hints at the possibility of outliers, which will be confirmed through [box-plot visualizations](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#-visualization). In a scenario where the mean value is more significant, the trimmed mean (TrMean) could be calculated to reduce the impact of these outliers.
 
@@ -189,14 +189,15 @@ COLUMN NAME | GRAPH | COLUMN NAME | GRAPH|
 **Species** | <img src="https://user-images.githubusercontent.com/67931161/141657560-baf7f994-6a45-4219-8a1e-d0af11298e71.png" height="275" width="400"/> | **Parish** | <img src="https://user-images.githubusercontent.com/67931161/141657570-7e5f2c67-eb47-48c7-9e88-0bf543de6d62.png" height="275" width="400"/> 
 **Envrionment Type** | <img src="https://user-images.githubusercontent.com/67931161/141657578-b5059ad3-bc64-47d3-8246-2bc11b5b30a9.png" height="275" width="400"/> | **Body of Water** | <img src="https://user-images.githubusercontent.com/67931161/141657584-36f6722e-7488-4561-9ff6-40895be713c5.png" height="275" width="400"/> 
 
+*N.B - You can click on one of the images to open it in a new tab and see it at a larger scale <3.*
 <br><br><br>
 
-## 👩‍🌾 *Key Observations*
+## 🎣 *Key Observations*
 ### 1. Something Useful
 As mentioned earlier, it would be useful
 > to break the dataset down further and look at the mean for e.g the 'Catch Percentage', parish by parish.
 
-This would primarily be useful for farmers as it would help them to determine which parish(es) they would be most likely to catch fish. The below code was used,
+This would primarily be useful for fisherfolk as it would help them to determine which parish(es) they would be most likely to catch fish. The below code was used,
 ```python
 #the listOfParishes is not shown in order to save space
 df_fish = df_fish[['Parish', 'Catch Percentage']]
@@ -218,7 +219,7 @@ print(sortedCatchInfo)
 ```
 <br>
 
-*I would show the dictionary output in the terminal but it's rather ugly, so I've formatted it properly to 3 s.f here,*
+*I would show the dictionary output in the terminal but it's rather ugly[^1], so I've formatted it properly to 3 s.f here,*
 <br><br>
 <img src="https://user-images.githubusercontent.com/67931161/141660418-1bbededc-0bc4-4a23-8c5b-e3b7e5e7dd60.jpg" alt="Welcome to Clarendon, home to a 0.137 Catch Percentage!" align="right" height="400" width="500px"/>
 
@@ -253,3 +254,48 @@ Now, according to my ninth grade geography,
 * Freshwater = rivers, lakes, and other smaller bodies of water
 * Estuartine =  that awkward space between a saltwater body of water, and a freshwater BoW
 * Aquaculture = manmade bodies of water
+
+Of course, there are cases where e.g lagoons have freshwater or lakes have saltwater, however, these scenarios sum to less than 1% of the global total of freshwater and saltwater[^2]. I am hence confident in calling these scenarios negligle, and therefore oceans, seas, and lagoons should host 50% of the recorded species (as mentioned earlier). Looking at the dataset, there are no ocean bodies of water, but there are sea sides and lagoons. Using the below code, confirmed by the pie chart, the frequency of each body of water was found:
+```python 
+df_fish = df_fish['Body of Water']
+print(df_fish.value_counts())
+```
+<br>
+<img src="https://user-images.githubusercontent.com/67931161/141657584-36f6722e-7488-4561-9ff6-40895be713c5.png" align="right" height="275" width="375"/> 
+
+| Body of Water | Frequency
+|:-----: | :-----: |
+**River** | 88
+**Sea Side** | 32
+**Lagoon** | 28
+**Aquaculture** | 11
+
+This shows that 37.7% of all bodies of water in this dataset should, theoretically, be considered Saltwater environments. However, the actual figure of Saltwater environments seen in the pie chart is 51.6% - a figure *13.9%* greater. This, of course, begs the question  **"what percentage of Jamaican rivers have high salinity."** 
+
+<img src="https://user-images.githubusercontent.com/67931161/141657578-b5059ad3-bc64-47d3-8246-2bc11b5b30a9.png" align="left" height="275" width="375"/>
+<br>
+
+The answer to which may or may not be in the depths of an 118 page document[^3].
+
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+
+<br><br><br><br><br><br><br>
+
+## 👋 *Conclusion*
+Well this was fun - describing and analyzing a seemingly randomly-generated dataset of fish. To recount what was done, 
+- [x] A basic overview of the data
+- [x] Statistically describing the data
+- [x] Visualizing the data
+- [x] Observing something *interesting*
+- [x] Observing something *useful*
+- [x] Making this document a tad exciting
+
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+
+<br><br>
+
+[^1]: For those still curious, here is what it looked like.
+[^2]: Sources for this information
+    * [Total global saltwater and freshwater estimates](https://www.grida.no/resources/5808)
+    * [What percentage of lakes are saltwater](https://www.sidmartinbio.org/what-percentage-of-lakes-are-salt-water/#:~:text=Saline%20lakes%20and%20inland,and%20streams%20(0.0001%20percent.))
+[^3]: Document - [Water Resources Assessment of Jamaica](https://www.sam.usace.army.mil/Portals/46/docs/military/engineering/docs/WRA/Jamaica/Jamaica%20WRA%20-%20English.pdf)
