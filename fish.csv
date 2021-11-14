@@ -1,0 +1,160 @@
+Species,Avg Weight/g,Avg Length1 - vertical,Avg Length2 - diagonal,Avg Length3 - cross,Parish,Environment Type,Body of Water,Estimated Fish Pop by Tonnes,Fish Caught Pop by Tonnes,Catch Percentage
+Gobies,363,26.3,29,33.5,Clarendon,Freshwater,River,"  9,100.0 ",91,0.01
+Bonito,700,31.9,35,40.5,Clarendon,Saltwater,River,  607.1 ,85,0.14
+Killifish,78,17.5,18.8,21.2,Clarendon,Freshwater,Aquaculture,  833.3 ,150,0.18
+Kingfish,110,19.1,20.8,23.1,Clarendon,Saltwater,Lagoon,"  1,512.5 ",121,0.08
+Livebearers,300,24,26,29,Clarendon,Freshwater,River,"  1,400.0 ",140,0.1
+Bonito,225,22,24,25.5,Clarendon,Saltwater,River,  884.6 ,115,0.13
+Jack,188,22.6,24.6,26.2,Clarendon,Saltwater,Sea Side,  544.4 ,98,0.18
+Bonito,514,30.5,32.8,34,Clarendon,Saltwater,River,  531.6 ,101,0.19
+Tuna,510,40,42.5,45.5,Clarendon,Saltwater,River,  507.1 ,71,0.14
+Bonito,8.7,10.8,11.3,12.6,Clarendon,Saltwater,River,  536.8 ,102,0.19
+Snook,12.2,12.1,13,13.8,Clarendon,Estuarine,Lagoon,  541.2 ,92,0.17
+Barracuda,290,24,26.3,31.2,Hanover,Saltwater,River,  925.0 ,74,0.08
+Mangrove snapper,390,27.6,30,35,Hanover,Estuarine,River,"  1,175.0 ",94,0.08
+Mangrove snapper,500,29.1,31.5,36.4,Hanover,Estuarine,River,  500.0 ,65,0.13
+Whiting,600,29.4,32,37.2,Hanover,Saltwater,River,"  1,160.0 ",116,0.1
+Bonito,975,37.4,41,45.9,Hanover,Saltwater,Lagoon,  531.3 ,85,0.16
+Barracuda,0,19,20.5,22.8,Hanover,Saltwater,River,  578.6 ,81,0.14
+Jewfish,161,22,23.4,26.7,Hanover,Estuarine,River,  506.3 ,81,0.16
+Jack,270,24.1,26.5,29.3,Hanover,Saltwater,River,"  1,800.0 ",144,0.08
+Jack,40,13.8,15,16,Hanover,Saltwater,Aquaculture,"  1,014.3 ",142,0.14
+Bonito,120,20,22,23.5,Hanover,Saltwater,River,  871.4 ,61,0.07
+Kingfish,170,21.5,23.5,25,Hanover,Saltwater,Lagoon,"  1,085.7 ",76,0.07
+Mackerel,300,26.9,28.7,30.1,Hanover,Saltwater,River,  635.7 ,89,0.14
+Killifish,840,32.5,35,37.3,Hanover,Freshwater,River,"  4,066.7 ",122,0.03
+Jewfish,685,34,36.5,39,Hanover,Estuarine,River,"  1,875.0 ",75,0.04
+Kingfish,900,36.5,39,41.4,Hanover,Saltwater,Sea Side,"  1,064.3 ",149,0.14
+Mackerel,7.5,10,10.5,11.6,Hanover,Saltwater,Lagoon,"  4,200.0 ",84,0.02
+Kingfish,10,11.3,11.8,13.1,Hanover,Saltwater,Lagoon,"  1,025.0 ",123,0.12
+Snook,12.2,11.5,12.2,13.4,Hanover,Estuarine,River,  610.5 ,116,0.19
+Mangrove snapper,340,29.5,32,37.3,Kingston Parish,Estuarine,River,"  4,866.7 ",146,0.03
+Tuna,600,29.4,32,37.2,Kingston Parish,Saltwater,River,"  3,100.0 ",62,0.02
+Mullet,700,30.4,33,38.3,Kingston Parish,Estuarine,Sea Side,  760.0 ,76,0.1
+Whiting,725,31.8,35,40.9,Kingston Parish,Saltwater,River,"  4,433.3 ",133,0.03
+Whiting,120,19.4,21,23.7,Kingston Parish,Saltwater,Lagoon,  991.7 ,119,0.12
+Perch,200,22.1,23.5,26.8,Kingston Parish,Freshwater,River,"  1,444.4 ",130,0.09
+Perch,540,28.5,31,34,Kingston Parish,Freshwater,River,  842.9 ,59,0.07
+Barracuda,80,17.2,19,20.2,Kingston Parish,Saltwater,Sea Side,  561.1 ,101,0.18
+Jewfish,115,19,21,22.5,Kingston Parish,Estuarine,River,"  1,514.3 ",106,0.07
+Jack,690,34.6,37,39.3,Kingston Parish,Saltwater,River,  876.9 ,114,0.13
+Mackerel,567,43.2,46,48.7,Kingston Parish,Saltwater,Lagoon,  670.6 ,114,0.17
+Perch,610,30.9,33.5,38.6,Manchester,Freshwater,Aquaculture,  423.1 ,55,0.13
+Jewfish,575,31.3,34,39.5,Manchester,Estuarine,River,"  1,750.0 ",140,0.08
+Killifish,714,32.7,36,41.5,Manchester,Freshwater,Lagoon,  890.9 ,98,0.11
+Jack,1000,33.5,37,42.6,Manchester,Saltwater,River,"  1,100.0 ",88,0.08
+Perch,920,35,38.5,44.1,Manchester,Freshwater,Sea Side,  858.8 ,146,0.17
+Snook,950,38,41,46.5,Manchester,Estuarine,River,  557.1 ,78,0.14
+Jewfish,150,20.4,22,24.7,Manchester,Estuarine,River,  715.4 ,93,0.13
+Whiting,60,14.3,15.5,17.4,Manchester,Saltwater,River,  600.0 ,78,0.13
+Jewfish,130,19.3,21.3,22.8,Manchester,Estuarine,Sea Side,"  1,625.0 ",65,0.04
+Jewfish,820,36.6,39,41.3,Manchester,Estuarine,Lagoon,"  2,920.0 ",146,0.05
+Bonito,1015,37,40,42.4,Manchester,Saltwater,River,"  1,866.7 ",56,0.03
+Killifish,1000,40.2,43.5,46,Manchester,Freshwater,River,  820.0 ,123,0.15
+Perch,950,48.3,51.7,55.1,Manchester,Freshwater,Sea Side,  788.2 ,134,0.17
+Bonito,9.8,11.4,12,13.2,Manchester,Saltwater,River,  631.6 ,120,0.19
+Perch,720,32,35,40.6,Portland,Freshwater,Lagoon,  718.8 ,115,0.16
+Barracuda,145,20.5,22,24.3,Portland,Saltwater,Lagoon,  733.3 ,88,0.12
+Bonito,390,29.5,31.7,35,Portland,Saltwater,Lagoon,"  1,107.7 ",144,0.13
+Whiting,32,12.5,13.7,14.7,Portland,Saltwater,River,  364.7 ,62,0.17
+Perch,51.5,15,16.2,17.2,Portland,Freshwater,River,"  1,642.9 ",115,0.07
+Gobies,70,15.7,17.4,18.5,Portland,Freshwater,Lagoon,"  1,471.4 ",103,0.07
+Jewfish,150,20.5,22.5,24,Portland,Estuarine,Aquaculture,  417.6 ,71,0.17
+Mackerel,265,25.4,27.5,28.9,Portland,Saltwater,Sea Side,"  6,400.0 ",64,0.01
+Tuna,320,27.8,30,31.6,Portland,Saltwater,River,  450.0 ,72,0.16
+Barracuda,700,34,36,38.3,Portland,Saltwater,River,"  1,171.4 ",82,0.07
+Jewfish,900,37,40,42.5,Portland,Estuarine,Lagoon,  416.7 ,50,0.12
+Barracuda,430,35.5,38,40.5,Portland,Saltwater,River,  688.9 ,124,0.18
+Snook,9.9,11.3,11.8,13.1,Portland,Estuarine,Sea Side,"  2,450.0 ",98,0.04
+Livebearers,13.4,11.7,12.4,13.5,Portland,Freshwater,River,  481.8 ,53,0.11
+Perch,450,27.6,30,35.1,Saint Andrew,Freshwater,River,  561.1 ,101,0.18
+Kingfish,850,32.8,36,41.6,Saint Andrew,Saltwater,River,"  1,250.0 ",150,0.12
+Whiting,955,35,38.5,44,Saint Andrew,Saltwater,Lagoon,  584.2 ,111,0.19
+Killifish,306,25.6,28,30.8,Saint Andrew,Freshwater,Lagoon,"  6,300.0 ",126,0.02
+Jack,800,33.7,36.4,39.6,Saint Andrew,Saltwater,Sea Side,  327.8 ,59,0.18
+Jack,55,13.5,14.7,16.5,Saint Andrew,Saltwater,River,  284.2 ,54,0.19
+Gobies,5.9,7.5,8.4,8.8,Saint Andrew,Freshwater,River,"  2,140.0 ",107,0.05
+Barracuda,100,16.2,18,19.2,Saint Andrew,Saltwater,Sea Side,  915.4 ,119,0.13
+Mullet,150,21,23,24.5,Saint Andrew,Estuarine,Aquaculture,  925.0 ,111,0.12
+Perch,340,23.9,26.5,31.1,Saint Ann,Freshwater,Sea Side,"  1,485.7 ",104,0.07
+Snook,430,26.5,29,34,Saint Ann,Estuarine,River,  660.0 ,99,0.15
+Perch,650,31,33.5,38.7,Saint Ann,Freshwater,River,  782.4 ,133,0.17
+Perch,925,36.2,39.5,45.3,Saint Ann,Freshwater,Aquaculture,  421.1 ,80,0.19
+Mangrove snapper,120,18.6,20,22.2,Saint Ann,Estuarine,Sea Side,"  8,500.0 ",85,0.01
+Perch,270,23.6,26,28.7,Saint Ann,Freshwater,Lagoon,  636.8 ,121,0.19
+Perch,120,17.5,19,21.3,Saint Ann,Freshwater,Lagoon,"  3,100.0 ",124,0.04
+Mackerel,1100,40.1,43,45.5,Saint Ann,Saltwater,Lagoon,  368.8 ,59,0.16
+Livebearers,300,34.8,37.3,39.8,Saint Ann,Freshwater,River,  846.7 ,127,0.15
+Barracuda,242,23.2,25.4,30,Saint Catherine,Saltwater,River,"  7,400.0 ",148,0.02
+Bonito,160,21.1,22.5,25,Saint Catherine,Saltwater,River,"  2,066.7 ",62,0.03
+Tuna,120,20,22,23.5,Saint Catherine,Saltwater,Sea Side,  417.6 ,71,0.17
+Bonito,135,20,22,23.5,Saint Catherine,Saltwater,River,"  5,200.0 ",52,0.01
+Jewfish,130,20.5,22.5,24,Saint Catherine,Estuarine,Lagoon,"  4,150.0 ",83,0.02
+Jack,197,23.5,25.6,27,Saint Catherine,Saltwater,River,"  1,160.0 ",116,0.1
+Kingfish,218,25,26.5,28,Saint Catherine,Saltwater,Sea Side,  494.4 ,89,0.18
+Bonito,850,36.9,40,42.3,Saint Catherine,Saltwater,River,  547.1 ,93,0.17
+Perch,820,37.1,40,42.5,Saint Catherine,Freshwater,River,  620.0 ,124,0.2
+Mullet,300,32.7,35,38.8,Saint Catherine,Estuarine,Sea Side,  450.0 ,72,0.16
+Snook,500,42,45,48,Saint Catherine,Estuarine,River,"  1,642.9 ",115,0.07
+Gobies,770,44.8,48,51.2,Saint Catherine,Freshwater,Lagoon,  985.7 ,69,0.07
+Livebearers,19.7,13.2,14.3,15.2,Saint Catherine,Freshwater,Sea Side,"  1,660.0 ",83,0.05
+Killifish,700,30.4,33,38.5,Saint Elizabeth,Freshwater,Sea Side,"  1,077.8 ",97,0.09
+Tuna,69,16.5,18.2,20.3,Saint Elizabeth,Saltwater,Aquaculture,"  6,600.0 ",66,0.01
+Mackerel,290,24,26,29.2,Saint Elizabeth,Saltwater,Lagoon,  411.8 ,70,0.17
+Jack,273,23,25,28,Saint Elizabeth,Saltwater,Sea Side,"  4,233.3 ",127,0.03
+Tuna,78,16.8,18.7,19.4,Saint Elizabeth,Saltwater,River,"  1,975.0 ",79,0.04
+Jack,540,40.1,43,45.8,Saint Elizabeth,Saltwater,River,  400.0 ,76,0.19
+Barracuda,1650,59,63.4,68,Saint Elizabeth,Saltwater,Sea Side,  931.3 ,149,0.16
+Barracuda,6.7,9.3,9.8,10.8,Saint Elizabeth,Saltwater,River,"  7,900.0 ",79,0.01
+Jewfish,500,26.8,29.7,34.5,Saint James,Estuarine,River,"  1,266.7 ",76,0.06
+Tuna,685,31.4,34,39.2,Saint James,Saltwater,River,  635.3 ,108,0.17
+Livebearers,40,12.9,14.1,16.2,Saint James,Freshwater,River,"  1,100.0 ",66,0.06
+Jewfish,140,21,22.5,25,Saint James,Estuarine,River,"  5,100.0 ",51,0.01
+Killifish,1000,37.3,40,43.5,Saint James,Freshwater,Sea Side,  683.3 ,123,0.18
+Bonito,90,16.3,17.7,19.8,Saint James,Saltwater,River,  621.1 ,118,0.19
+Jewfish,85,17.8,19.6,20.8,Saint James,Estuarine,River,  593.8 ,95,0.16
+Mangrove snapper,145,20.7,22.7,24.2,Saint James,Estuarine,River,  754.5 ,83,0.11
+Whiting,250,25.4,27.5,28.9,Saint James,Saltwater,Sea Side,  326.3 ,62,0.19
+Mackerel,345,36,38.5,41,Saint James,Saltwater,River,"  2,260.0 ",113,0.05
+Barracuda,450,26.8,29.7,34.7,Saint Mary,Saltwater,River,"  2,028.6 ",142,0.07
+Bonito,87,18.2,19.8,22.2,Saint Mary,Saltwater,Aquaculture,  429.4 ,73,0.17
+Mullet,110,20,22,23.5,Saint Mary,Estuarine,River,"  1,880.0 ",94,0.05
+Mackerel,260,25.4,27.5,28.9,Saint Mary,Saltwater,Aquaculture,  625.0 ,100,0.16
+Whiting,700,34.5,37,39.4,Saint Mary,Saltwater,River,"  1,300.0 ",117,0.09
+Tuna,300,31.7,34,37.8,Saint Mary,Saltwater,Lagoon,  900.0 ,126,0.14
+Gobies,7,10.1,10.6,11.6,Saint Mary,Freshwater,River,"  2,083.3 ",125,0.06
+Mackerel,9.7,10.4,11,12,Saint Mary,Saltwater,Sea Side,  500.0 ,75,0.15
+Jack,475,28.4,31,36.2,Saint Thomas,Saltwater,River,  666.7 ,60,0.09
+Snook,160,20.5,22.5,25.3,Saint Thomas,Estuarine,River,"  6,600.0 ",132,0.02
+Killifish,169,22,24,27.2,Saint Thomas,Freshwater,River,  950.0 ,133,0.14
+Jack,272,25,27,30.6,Saint Thomas,Saltwater,River,  566.7 ,85,0.15
+Gobies,140,19,20.7,23.2,Saint Thomas,Freshwater,Sea Side,"  7,300.0 ",73,0.01
+Jack,110,19,21,22.5,Saint Thomas,Saltwater,River,"  1,318.2 ",145,0.11
+Barracuda,556,32,34.5,36.5,Saint Thomas,Saltwater,Lagoon,  830.8 ,108,0.13
+Snook,1000,41.1,44,46.6,Saint Thomas,Estuarine,River,"  1,500.0 ",150,0.1
+Mackerel,1600,56,60,64,Saint Thomas,Saltwater,Sea Side,  473.7 ,90,0.19
+Snook,1550,56,60,64,Saint Thomas,Estuarine,River,  678.9 ,129,0.19
+Barracuda,500,28.5,30.7,36.2,Trelawny,Saltwater,River,"  1,425.0 ",114,0.08
+Mackerel,500,28.7,31,36.2,Trelawny,Saltwater,Aquaculture,"  1,411.1 ",127,0.09
+Bonito,620,31.5,34.5,39.7,Trelawny,Saltwater,River,"  1,483.3 ",89,0.06
+Gobies,680,31.8,35,40.6,Trelawny,Freshwater,Sea Side,"  11,700.0 ",117,0.01
+Barracuda,180,23.6,25.2,27.9,Trelawny,Saltwater,River,"  1,200.0 ",108,0.09
+Whiting,170,19,20.7,23.2,Trelawny,Saltwater,River,  475.0 ,95,0.2
+Mullet,200,21.2,23,25.8,Trelawny,Estuarine,Sea Side,  705.3 ,134,0.19
+Livebearers,85,18.2,20,21,Trelawny,Freshwater,River,  900.0 ,63,0.07
+Perch,130,20,22,23.5,Trelawny,Freshwater,Sea Side,"  1,425.0 ",57,0.04
+Perch,145,22,24,25.5,Trelawny,Freshwater,River,"  1,046.2 ",136,0.13
+Bonito,180,23,25,26.5,Trelawny,Saltwater,River,  600.0 ,60,0.1
+Kingfish,300,25.2,27.3,28.7,Trelawny,Saltwater,Sea Side,"  3,700.0 ",111,0.03
+Tuna,1100,39,42,44.6,Trelawny,Saltwater,River,  350.0 ,63,0.18
+Whiting,1000,39.8,43,45.2,Trelawny,Saltwater,Lagoon,  992.3 ,129,0.13
+Gobies,200,30,32.3,34.8,Trelawny,Freshwater,Sea Side,  858.8 ,146,0.17
+Mackerel,456,40,42.5,45.5,Trelawny,Saltwater,River,"  2,640.0 ",132,0.05
+Snook,19.9,13.8,15,16.2,Trelawny,Estuarine,Lagoon,"  1,787.5 ",143,0.08
+Perch,150,18.4,20,22.4,Westmoreland,Freshwater,River,  672.2 ,121,0.18
+Perch,145,19.8,21.5,24.1,Westmoreland,Freshwater,River,"  3,866.7 ",116,0.03
+Mullet,125,19,21,22.5,Westmoreland,Estuarine,Sea Side,"  1,200.0 ",84,0.07
+Killifish,250,25.9,28,29.4,Westmoreland,Freshwater,River,  431.6 ,82,0.19
+Gobies,650,36.5,39,41.4,Westmoreland,Freshwater,Lagoon,"  3,000.0 ",120,0.04
+Gobies,1250,52,56,59.7,Westmoreland,Freshwater,Aquaculture,  561.5 ,73,0.13
+Jack,9.8,10.7,11.2,12.4,Westmoreland,Saltwater,Sea Side,"  1,742.9 ",122,0.07
