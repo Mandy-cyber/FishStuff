@@ -247,6 +247,85 @@ print(sortedCatchInfo)
 
 <br><br>
 
+---
+### 1.1 Something Also Useful
+Okay, but let's also dig a little deeper and try to determine the correlation (if any) between the different variables. 
+<br>
+*Full credit to [Sebastian Norena](https://medium.com/@sebastiannorena/finding-correlation-between-many-variables-multidimensional-dataset-with-python-5deb3f39ffb3) for the code for the funky correlation graph.*
+```python
+corr = df_fish.corr()
+fig = plt.figure()
+ax = fig.add_subplot(111)
+cax = ax.matshow(corr,cmap='coolwarm', vmin=-1, vmax=1)
+fig.colorbar(cax)
+ticks = np.arange(0,len(df_fish.columns),1)
+ax.set_xticks(ticks)
+plt.xticks(rotation=90)
+ax.set_yticks(ticks)
+ax.set_xticklabels(df_fish.columns)
+ax.set_yticklabels(df_fish.columns)
+plt.show()
+```
+
+<br>
+<p align="center"><img src="https://user-images.githubusercontent.com/67931161/142946724-802eec0a-23e3-4f57-b957-d19a95a47915.png" height="400" width="500"/></p>
+
+The direct diagonal of the graph will always be red as it shows there is a correlation '1' value between each variable and itself.
+<br>
+
+The graph shows a high positive correlation between the *Species* of fish and the *Average Weight, Vertical Length, and Diagonal Length* of the fish. This then prompted me to breakdown each variable specie by specie. This could then be used by fisherfolk in:
+* Determing which species of fish they would like to catch based on size
+* Pricing their fish
+* Informing customers of average fish sizes (this would be more for businesses who allow persons to pre-order 🐠)
+
+<br>
+<p align="center"><img src="https://user-images.githubusercontent.com/67931161/142953229-ff91140b-a63c-4880-944d-4f34e7320c7a.gif"></p>
+<br>
+
+```python
+#Once again not showing some variables for the sake of space. I must sound like a broken record by now lol.
+dictOfWeight = {}
+dictOfVertical = {}
+dictOfDiagonal = {}
+for specie in listOfSpecies:
+    # print(specie)
+    df_fish = df_fish.loc[df_fish['Species'] == specie]
+    for v in listOfVars:
+        df_fish = df_fish[v]
+        avg = df_fish.sum() / len(df_fish)
+        # print(f"{v},", avg)
+        if v == 'Avg Weight/g':
+            dictOfWeight[specie] = round(avg, 1)
+        elif v == 'Avg Length1 - vertical':
+            dictOfVertical[specie] = round(avg, 1)
+        elif v == 'Avg Length2 - diagonal':
+            dictOfDiagonal[specie] = round(avg, 1)
+        df_fish = pd.read_csv('fish.csv')
+
+    # print("")    
+    # print("--------------------------------------------")
+df_fish = pd.read_csv('fish.csv')
+
+listOfDicts = [dictOfWeight, dictOfVertical, dictOfDiagonal]
+for dict in listOfDicts:
+    sortedKeys = sorted(dict, key=dict.get, reverse=True) 
+    sortedInfo = {}
+    for w in sortedKeys:
+        sortedInfo[w] = dict[w] #put those values into the new dict
+    [print(key,':',value) for key, value in sortedInfo.items()]
+    print("\n")
+```
+
+<br>
+
+Future Amanda speaking, something went wrong with my code (as always)... but I was able to find the results for the *Average Weight* of a fish by specie. The results were as follows,
+
+<img src="https://user-images.githubusercontent.com/67931161/142953005-eec6a11a-e6fc-4431-aeef-0e837c1b474c.png"/>
+<br><br>
+
+[**_(back to top)_**](https://github.com/Mandy-cyber/FishStuff/blob/main/README.md#table-of-contents)
+
+---
 ### 2. Something Interesting
 Something interesting, at least to me, was
 > just over 50% of the recorded species were found in Saltwater environments, and roughly 55% of the recorded species were found in River bodies of water.
